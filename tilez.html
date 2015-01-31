@@ -1,14 +1,24 @@
 <head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
   <title>tilez</title>
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
-
-  {{> hello}}
+  <table class="color{{color}}">
+    {{#each rows}}
+      <tr>
+      {{#each cols}}
+        <td>
+          {{> tile }}
+        </td>
+      {{/each}}
+      </tr>
+    {{/each}}
+  </table>
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="tile">
+  <div class="tile color{{color}}">
+    <!-- {{count}} -->
+  </div>
 </template>

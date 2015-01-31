@@ -1,1 +1,39 @@
 /* CSS declarations go here */
+html,body{
+  height:100%;
+  padding:0;
+  margin:0;
+}
+table{
+  height:100%;
+  width: 100%;
+}
+td{
+}
+div.tile{
+  height:100%;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+.color0{
+  background: white;
+}
+.color1{
+  background: red;
+}
+.color2{
+  background: orange;
+}
+.color3{
+  background: yellow;
+}
+.color4{
+  background: green;
+}
+.color5{
+  background: blue;
+}
+.color6{
+  background: black;
+}
